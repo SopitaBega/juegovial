@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+
+}
+.left-side, .right-side{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+ .left-side{
+    background-color: aqua;
+ }
+ .right-side{
+    background-color:aquamarine;
+ }
+ .sheep
