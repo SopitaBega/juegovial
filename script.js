@@ -30,9 +30,9 @@ function answer(correct) {
     } else {
         sheep.style.transform = 'traslateX(opx)';
         happy.style.display = 'none';
-        sad.tyle.display = 'block';
+        sad.style.display = 'block';
     }
-    currentQuestion++;
+    currentQuestions++;
     setTimeout(showQuestion, 1000);
 }
 showQuestion();
