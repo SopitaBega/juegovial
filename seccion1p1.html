@@ -1,0 +1,36 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>autovejo</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+
+        <div class="left-side">
+            <div id="question-area">
+                <p>SECCION 1: SEÑALES DE TRANSITO</p>
+                <P id ="question">¿Que significa esta señal?</P>
+                <img src="descarga.png">
+                <br>
+                <button onclick="answer(true)">No estacionar</button><br>
+                <button onclick="answer(false)">No girar a la izquierda</button><br>
+                <button onclick="answer(false)">No doblar en U</button>
+                <div class="mensaje">
+                <p id="resp-correcta"> Respuesta correcta :D</p>
+                <p id="resp-incorrecta">Respuesta incorrecta pipipi game overr</p>
+                <button onclick="window.location.href='seccion1p2.html'" id="cambio">Siguiente</button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="right-side">
+        <img src="" class="sheep" id="sheep">
+    
+        <img src="" class="reaction" id="happy">
+        <img src="" class="reaction" id="sad">
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>

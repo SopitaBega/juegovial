@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autovejo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="left-side">
+        <div id="question-area">
+            <p>SECCION 1: SEÑALES DE TRANSITO</p>
+            <P id ="question">En caso de ver estas señales de transito a la derecha ¿Que se debera hacer?</P>
+            <img src="noizq.png" class="tamaño">
+            <img src="dere.png" class="tamaño">
+            <img src="derrumbre.png" class="tamaño">
+            <br>
+            <button onclick="answer(false)">Ir a la izquierda</button><br>
+            <button onclick="answer(false)">Ir a la derecha</button><br>
+            <button onclick="answer(true)">Seguir derecho</button>
+            <div class="mensaje">
+            <p id="resp-correcta"> Respuesta correcta :D</p>
+            <p id="resp-incorrecta">Respuesta incorrecta pipipi game overr</p>
+            <button onclick="window.location.href='seccion2p1.html'" id="cambio">Siguiente</button>
+            
+        </div>
+    </div>
+</div>
+<div class="right-side">
+    <img src="" class="sheep" id="sheep">
+    <img src="" class="reaction" id="happy">
+    <img src="" class="reaction" id="sad">
+</div>
+<script src="script.js"></script>
+</body>
+</html>

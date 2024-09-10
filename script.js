@@ -1,38 +1,45 @@
-const questions = [
-    "pregunta 1",
-    "pregunta 2",
-    "pregunta 3",
-];
-let currentQuestions = 0;
+let currentQuestion = 0;
 const sheep =
-    document.getElementById('sheep');
+document.getElementById('sheep');
 const happy =
-    document.getElementById('happy');
+document.getElementById('happy');
 const sad =
-    document.getElementById('sad');
+document.getElementById('sad');
 const questionArea =
-    document.getElementById('question');
-function showQuestion() {
-    if (currentQuestions < questions.length) {
-        console.log(questionArea);
-        questionArea.textContent = questions[currentQuestions];
+document.getElementById('question');
+const mensaje=document.querySelector('#resp-correcta');
+const mensaje2=document.querySelector('#resp-incorrecta');
+const cambio=document.querySelector("#cambio");
+function showQuestion(){
+    if (currentQuestion < questions.length){
+        
+        questionArea.textContent =questions[currentQuestion];
     } else {
 
         questionArea.innerHTML = "<p> ¡juego terminado!</p>";
     }
 }
-function answer(correct) {
-    if (correct) {
-
-        sheep.style.transform = 'translatex(100px)';
+function answer(isCorrect) {
+    if (isCorrect) {
+        sheep.style.transform = 'translateX(100px)';
         happy.style.display = 'block';
-        sad.display = 'none';
+        sad.style.display = 'none';
+        mensaje.style.display='block';
+        mensaje2.style.display='none';
+        currentQuestion++;
+        cambio.style.display="block";
+        
+     
     } else {
-        sheep.style.transform = 'traslateX(opx)';
+        sheep.style.transform = 'translateX(0px)';
         happy.style.display = 'none';
         sad.style.display = 'block';
+        mensaje.style.display='none';
+        mensaje2.style.display='block';
+
+        window.location="index.html";
+
     }
-    currentQuestions++;
+   
     setTimeout(showQuestion, 1000);
 }
-showQuestion();
