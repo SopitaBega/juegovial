@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>autovejo</title>
         <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
     </head>
     <body>
 
         <div class="left-side">
             <div id="question-area">
-                <p>SECCION 1: SEÑALES DE TRANSITO</p>
+                <p id="seccion"></p>
                 <P id ="question">¿Que significa esta señal?</P>
-                <img src="descarga.png">
+                <img src="img/descarga.png">
                 <br>
                 <button onclick="answer(true)">No estacionar</button><br>
                 <button onclick="answer(false)">No girar a la izquierda</button><br>
@@ -27,10 +28,18 @@
     </div>
     <div class="right-side">
         <img src="" class="sheep" id="sheep">
-    
         <img src="" class="reaction" id="happy">
         <img src="" class="reaction" id="sad">
     </div>
     <script src="script.js"></script>
+    <script>
+        fetch("./db.json")
+            .then(res=>res.json())
+            .then(res=>{
+                const sec = document.getElementById("seccion");
+                sec.innerText=res[1].seccion;
+                console.log(res)
+            })
+    </script>
     </body>
     </html>

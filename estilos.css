@@ -11,32 +11,11 @@ body{
    justify-content: center;
 
 }
-.left-side{
-   background-color: rgb(84, 182, 238);
-}
-.right-side{
-   background-color:rgb(108, 130, 155);
-}
-.sheep {
-   width: 100px;
-   transition: transform 0.5s;
-}
-.reaction{
-   display: none;
-}
+
 body{
    display: flex;
    height: 100vh;
    margin: 0;
-
-}
-
-.sheep {
-   width: 100px;
-   transition: transform 0.5s;
-}
-.reaction{
-   display: none;
 }
 .mensaje 
 {
@@ -76,14 +55,6 @@ text-align: left;
    width: 148px;
 }
 
-#boton{
-   display: block;
-   color: rgb(0, 0, 0);
-   align-items: center;
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   height: 50px;
-   width: 90px;
-}
 .menu{
    color: rgb(255, 253, 157);
    background-color: rgb(110, 187, 180);
@@ -97,21 +68,23 @@ text-align: left;
 .final{
    color: rgb(255, 255, 255);
    background-color: rgb(110, 187, 180);
-   padding: 50px 370px;
-   height:300px;
-   width: 300px;
+   padding: 50px 156px;
+   display:flex;
+   align-items:self-start;
+   justify-content: center;
    
-
-
 }
 
 #finaldeljuego{
    display: block;
    color: aliceblue;
-   height: 15px;
-   width: 650px;
-   padding: 20px 80px;
+   font-size: 45px;
+   padding: 35px 80px;
+   align-items: center;
    border-style: double;
-
 }
 
+.btn btn-primary btn-lg{
+   align-items: center;
+
+}

@@ -1,0 +1,40 @@
+[
+    {
+        "seccion": "SEÑALES DE TRANSITO",
+        "texto":"¿Que significa esta señal?",
+        "opciones":[
+            {
+                "texto":"No estacionar",
+                "correct":true
+            },
+            {
+                "texto":"No girar a la izquierda",
+                "correct":false
+            },
+            {
+                "texto":"No doblar en U",
+                "correct":false
+            }            
+         ],
+         "image":"img/descarga.png"
+    },
+    {
+        "seccion": "hnjhnjhnjhnjhnjh",
+        "texto":"¿Que significa esta señal?",
+        "opciones":[
+            {
+                "texto":"No estacionar",
+                "correct":true
+            },
+            {
+                "texto":"No girar a la izquierda",
+                "correct":false
+            },
+            {
+                "texto":"No doblar en U",
+                "correct":false
+            }            
+         ],
+         "image":"img/descarga.png"
+    }
+]
