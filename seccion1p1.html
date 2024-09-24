@@ -12,7 +12,7 @@
         <div class="left-side">
             <div id="question-area">
                 <p id="seccion"></p>
-                <P id ="question">¿Que significa esta señal?</P>
+                <P id ="question"></P>
                 <img src="img/descarga.png">
                 <br>
                 <button onclick="answer(true)">No estacionar</button><br>
@@ -32,12 +32,15 @@
         <img src="" class="reaction" id="sad">
     </div>
     <script src="script.js"></script>
-    <script>
+    <script>let level=0;
         fetch("./db.json")
             .then(res=>res.json())
             .then(res=>{
+                const p=res[level];
                 const sec = document.getElementById("seccion");
-                sec.innerText=res[1].seccion;
+                sec.innerText=`seccion ${level+1}: ${p.seccion}`;
+                const pregunta = document.getElementById("question");
+                pregunta.innerText=res[0].texto;
                 console.log(res)
             })
     </script>
