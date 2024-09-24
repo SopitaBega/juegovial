@@ -13,7 +13,8 @@
             <div id="question-area">
                 <p id="seccion"></p>
                 <P id ="question"></P>
-                <img src="img/descarga.png">
+                <img src="" id="imagen" class="tamaño">
+        
                 <br>
                 <button onclick="answer(true)">No estacionar</button><br>
                 <button onclick="answer(false)">No girar a la izquierda</button><br>
@@ -21,7 +22,7 @@
                 <div class="mensaje">
                 <p id="resp-correcta"> Respuesta correcta :D</p>
                 <p id="resp-incorrecta">Respuesta incorrecta pipipi game overr</p>
-                <button onclick="window.location.href='seccion1p2.html'" id="cambio">Siguiente</button>
+                <button onclick="window.location.href='seccion1p2.html'"id="cambio">Siguiente</button>
                 
             </div>
         </div>
@@ -33,16 +34,21 @@
     </div>
     <script src="script.js"></script>
     <script>let level=0;
-        fetch("./db.json")
+       function cargarNivel(level) {
+            fetch("./db.json")
             .then(res=>res.json())
             .then(res=>{
                 const p=res[level];
                 const sec = document.getElementById("seccion");
-                sec.innerText=`seccion ${level+1}: ${p.seccion}`;
+                sec.innerText=`seccion ${p.seccion.num}: ${p.seccion.nombre}`;
                 const pregunta = document.getElementById("question");
-                pregunta.innerText=res[0].texto;
+                pregunta.innerText=p.texto;
+                const img = document.getElementById("imagen");
+                img.src=p.image;
                 console.log(res)
             })
+        }
+        cargarNivel(0)
     </script>
     </body>
     </html>
