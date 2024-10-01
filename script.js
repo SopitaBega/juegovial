@@ -10,16 +10,9 @@ document.getElementById('question');
 const mensaje=document.querySelector('#resp-correcta');
 const mensaje2=document.querySelector('#resp-incorrecta');
 const cambio=document.querySelector("#cambio");
-function showQuestion(){
-    if (currentQuestion < questions.length){
-        
-        questionArea.textContent =questions[currentQuestion];
-    } else {
 
-        questionArea.innerHTML = "<p> ¡juego terminado!</p>";
-    }
-}
-function answer(isCorrect) {
+function answer(e) {
+    const isCorrect=e.dataset.correct;
     if (isCorrect) {
         sheep.style.transform = 'translateX(100px)';
         happy.style.display = 'block';
@@ -36,10 +29,12 @@ function answer(isCorrect) {
         sad.style.display = 'block';
         mensaje.style.display='none';
         mensaje2.style.display='block';
-
-        window.location="index.html";
+        setTimeout(()=>{
+            window.location="index.html"
+        }, 1000);
+     
 
     }
    
-    setTimeout(showQuestion, 1000);
+
 }

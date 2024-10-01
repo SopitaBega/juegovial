@@ -70,13 +70,13 @@ text-align: left;
    background-color: rgb(110, 187, 180);
    padding: 50px 156px;
    display:flex;
-   align-items:self-start;
-   justify-content: center;
+   align-items:center;
+   justify-content:center;
+   flex-direction: column;
    
 }
 
 #finaldeljuego{
-   display: block;
    color: aliceblue;
    font-size: 45px;
    padding: 35px 80px;
@@ -88,3 +88,8 @@ text-align: left;
    align-items: center;
 
 }
+.ovejita{
+   height: 300px;
+   width: 400px;
+}
+   

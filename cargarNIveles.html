@@ -1,0 +1,97 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>autovejo</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+
+        <div class="left-side">
+            <div id="question-area">
+                <p id="seccion"></p>
+                <P id ="question"></P>
+                <img src="" id="imagen" class="tamaño">
+        
+                <br>
+                <button id="opc1" onclick="answer(this)"></button><br>
+                <button id="opc2" onclick="answer(this)"></button><br>
+                <button id="opc3" onclick="answer(this)"></button>
+                <div class="mensaje">
+                <p id="resp-correcta"> Respuesta correcta :D</p>
+                <p id="resp-incorrecta">Respuesta incorrecta pipipi</p>
+                <button onclick="cargarNivel(this)" id="cambio">Siguiente</button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="right-side">
+        <img src="" class="sheep" id="sheep">
+        <img src="" class="reaction" id="happy">
+        <img src="" class="reaction" id="sad">
+    </div>
+    <script src="script.js"></script>
+    <script>
+        let level = 0; // Variable global para controlar el nivel
+        
+        function cargarNivel(e) {console.log(e);
+            if (typeof e !=='undefined'){
+                e.style.display='none';
+                console.log(e.style);
+                
+            }
+            mensaje.style.display='none';
+            fetch("./db.json")
+            .then(res => res.json())
+            .then(res => {
+                const p = res[level];
+        console.log(p)
+                if (!p) {
+                    console.error(`Nivel ${level} no encontrado en db.json`);
+                    return;
+                }
+        
+                const sec = document.getElementById("seccion");
+                sec.innerText = `seccion ${p.seccion.num}: ${p.seccion.nombre}`;
+                
+                const pregunta = document.getElementById("question");
+                pregunta.innerText = p.texto;
+                
+                const img = document.getElementById("imagen");
+                img.src = p.image;
+
+                const opc1 = document.getElementById("opc1");
+                opc1.innerText = p.opciones[0].texto;
+                opc1.dataset.correct = p.opciones[0].correct;
+
+                const opc2 = document.getElementById("opc2");
+                opc2.innerText = p.opciones[1].texto;
+                opc2.dataset.correct = opc2.correct; 
+
+                const opc3 = document.getElementById("opc3");
+                opc3.innerText = p.opciones[2].texto;
+                opc3.dataset.correct = opc3.correct; 
+
+
+                console.log(res);
+        
+                level++; // Incrementa el nivel
+        
+                // Reinicia el nivel si se ha alcanzado el final
+                if (level >= res.length) {
+                    level = 0; // Reiniciar al primer nivel
+                    console.log("Reiniciando al primer nivel.");
+                }
+            })
+            .catch(error => {
+                console.error("Error al cargar los datos:", error);
+            });
+        }
+        
+        // Llama a cargarNivel la primera vez
+        cargarNivel();
+        </script>
+    </body>
+    </html>
