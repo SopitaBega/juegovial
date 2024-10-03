@@ -106,11 +106,10 @@
             {
                 "texto":"Seguir derecho",
                 "correct":true
-            }            
+            }           
          ],
-         "image":"img/noizq.png",
-         "image2":"img/dere.png",
-         "image3":"img/derrumbre.png"    
+         "image": "img/noizq.png"
+           
     },
     {
         "seccion": {
@@ -154,8 +153,7 @@
                 "correct":true
             }            
          ],
-         "image":"img/senales-preventivas-escolares.webp",
-         "image2":"img/signe-de-l-hopital-b788ae.jpg"
+         "image":"img/1señales.png"
     },
     {
         "seccion": {
@@ -243,8 +241,7 @@
                 "correct":false
             }            
          ],
-         "image":"img/msincasco.png",
-         "image2":"img/msincasco.png"
+         "image":"img/motoss.png"
 
     },
     {
@@ -355,10 +352,8 @@
                 "correct":false
             }            
          ],
-         "image":"img/celulindo.png",
-         "image2":"img/musicauto.png",
-         "image3":"img/automomir.png"
-    },
+         "image":"img/autodistraersexd.png"
+        },
     {
         "seccion": {
             "nombre": "comportamiento del conductor",

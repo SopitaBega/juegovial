@@ -12,7 +12,8 @@ const mensaje2=document.querySelector('#resp-incorrecta');
 const cambio=document.querySelector("#cambio");
 
 function answer(e) {
-    const isCorrect=e.dataset.correct;
+  //  const isCorrect=e.dataset.correct;
+  const isCorrect = e.dataset.correct==='true';
     if (isCorrect) {
         sheep.style.transform = 'translateX(100px)';
         happy.style.display = 'block';
