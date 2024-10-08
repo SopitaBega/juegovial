@@ -1,10 +1,10 @@
 let currentQuestion = 0;
-const sheep =
+const sheep = 
 document.getElementById('sheep');
 const happy =
 document.getElementById('happy');
-const sad =
-document.getElementById('sad');
+const angry =
+document.getElementById('angry');
 const questionArea =
 document.getElementById('question');
 const mensaje=document.querySelector('#resp-correcta');
@@ -14,28 +14,36 @@ const cambio=document.querySelector("#cambio");
 function answer(e) {
   //  const isCorrect=e.dataset.correct;
   const isCorrect = e.dataset.correct==='true';
+       
     if (isCorrect) {
-        sheep.style.transform = 'translateX(100px)';
+        sheep.style.display='none';
+        //sheep.style.transform = 'translateX(100px)';
         happy.style.display = 'block';
-        sad.style.display = 'none';
+        angry.style.display = 'none';
         mensaje.style.display='block';
         mensaje2.style.display='none';
         currentQuestion++;
         cambio.style.display="block";
-        
      
     } else {
-        sheep.style.transform = 'translateX(0px)';
+        sheep.style.display='none';
+        //sheep.style.transform = 'translateX(0px)';
         happy.style.display = 'none';
-        sad.style.display = 'block';
+        angry.style.display = 'block';
         mensaje.style.display='none';
         mensaje2.style.display='block';
         setTimeout(()=>{
             window.location="index.html"
         }, 1000);
-     
+        
 
     }
-   
+    
 
+}
+function cambioimg()
+{
+    sheep.style.display="block";
+    angry.style.display = 'none';
+    happy.style.display = 'none';
 }

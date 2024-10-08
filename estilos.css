@@ -92,4 +92,18 @@ text-align: left;
    height: 300px;
    width: 400px;
 }
-   
+#sheep{
+   display:block;
+   height: 300px;
+   width: 400px;
+}
+#happy{
+   display:none;
+   height: 300px;
+   width: 400px;
+}
+#angry{
+   display:none;
+   height: 300px;
+   width: 400px;
+}
