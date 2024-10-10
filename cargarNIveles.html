@@ -5,24 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>autovejo</title>
         <link rel="stylesheet" href="estilos.css">
-        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap.min2.css">
     </head>
     <body>
        
         <div class="left-side">
             <div id="question-area">
-                <p id="seccion"></p>
-                <P id ="question"></P>
+                <p id="Sección" class="textolindo"></p>
+                <P id ="question" class="preguntalinda"></P>
                 <img src="" id="imagen" class="tamaño">
-        
                 <br>
-                <button id="opc1" onclick="answer(this)"></button><br>
-                <button id="opc2" onclick="answer(this)"></button><br>
-                <button id="opc3" onclick="answer(this)"></button>
+                <button id="opc1" onclick="answer(this)" class="btn btn-outline-light"></button>
+                <button id="opc2" onclick="answer(this)"class="btn btn-outline-light" ></button>
+                <button id="opc3" onclick="answer(this)"class="btn btn-outline-light"></button>
                 <div class="mensaje">
                 <p id="resp-correcta"> Respuesta correcta :D</p>
-                <p id="resp-incorrecta">Respuesta incorrecta pipipi</p>
-                <button onclick="cargarNivel(this), cambioimg()" id="cambio">Siguiente</button>
+                <p id="resp-incorrecta">Respuesta incorrecta >:/</p>
+                <button onclick="cargarNivel(this), cambioimg()" id="cambio"class="btn btn-outline-success">Siguiente</button>
                 
             </div>
         </div>
@@ -62,8 +61,8 @@
                     
                 }
         
-                const sec = document.getElementById("seccion");
-                sec.innerText = `seccion ${p.seccion.num}: ${p.seccion.nombre}`;
+                const sec = document.getElementById("Sección");
+                sec.innerText = `Sección ${p.Sección.num}: ${p.Sección.nombre}`;
                 
                 const pregunta = document.getElementById("question");
                 pregunta.innerText = p.texto;

@@ -53,6 +53,9 @@ text-align: left;
 .tamaño{
    height: 150px;
    width: 250px;
+   border: 10px  solid pink;
+   border-style:groove;
+   
 }
 
 .menu{
@@ -91,19 +94,44 @@ text-align: left;
 .ovejita{
    height: 300px;
    width: 400px;
+   border: 10px  solid pink;
+   border-style:groove;
+
 }
 #sheep{
    display:block;
    height: 300px;
    width: 400px;
+   border: 10px  solid pink;
+   border-style:groove;
 }
 #happy{
    display:none;
    height: 300px;
    width: 400px;
+   border: 10px  solid pink;
+   border-style:groove;
 }
 #angry{
    display:none;
    height: 300px;
    width: 400px;
+   border: 10px  solid pink;
+   border-style:groove;
+}
+.btn-outline-light{
+   margin-top: 10px;
+}
+.textolindo{
+   font-size: 25px;
+   text-align: center;
+}
+.preguntalinda{
+   text-align: center;
+}
+#question-area{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
 }

@@ -1,6 +1,6 @@
 [
     {
-        "seccion": {
+        "Sección": {
          "nombre": "SEÑALES DE TRANSITO",
          "num":1
         },
@@ -23,7 +23,7 @@
          "image":"img/descarga.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "SEÑALES DE TRANSITO",
             "num":1
            },
@@ -45,7 +45,7 @@
          "image":"img/nogirarder.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "SEÑALES DE TRANSITO",
             "num":1
            },
@@ -67,7 +67,7 @@
          "image":"img/depre.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "SEÑALES DE TRANSITO",
             "num":1
            },
@@ -89,7 +89,7 @@
          "image":"img/vaca.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "SEÑALES DE TRANSITO",
             "num":1
            },
@@ -112,7 +112,7 @@
            
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "NORMAS DE CONDUCCION",
             "num":2
            },
@@ -134,7 +134,7 @@
          "image":"img/sunflower-traffic-signs-speed-limit-260nw-1998554960.webp"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "NORMAS DE CONDUCCION",
             "num":2
            },
@@ -156,7 +156,7 @@
          "image":"img/1señales.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "NORMAS DE CONDUCCION",
             "num":2
            },
@@ -178,7 +178,7 @@
          "image":"img/cinto.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "NORMAS DE CONDUCCION",
             "num":2
            },
@@ -200,11 +200,11 @@
          "image":"img/sinson.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "NORMAS DE CONDUCCION",
             "num":2
            },
-        "texto":"En una interseccion sin señales de transito, ¿Quien tiene la prioridad el auto que sigue derecho o el que quiere girar?",
+        "texto":"En una interSección sin señales de transito, ¿Quien tiene la prioridad el auto que sigue derecho o el que quiere girar?",
         "opciones":[
             {
                 "texto":"El auto que quiere girar",
@@ -222,7 +222,7 @@
          "image":"img/give-way-63_004.jpg"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "NORMAS DE SEGURIDAD",
             "num":3
            },
@@ -245,7 +245,7 @@
 
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "NORMAS DE SEGURIDAD",
             "num":3
            },
@@ -267,7 +267,7 @@
          "image":"img/conductorcelu.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "NORMAS DE SEGURIDAD",
             "num":3
            },
@@ -289,7 +289,7 @@
          "image":"img/automalito.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "NORMAS DE SEGURIDAD",
             "num":3
            },
@@ -311,7 +311,7 @@
          "image":"img/autoapurado.png" 
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "NORMAS DE SEGURIDAD",
             "num":3
            },
@@ -333,7 +333,7 @@
          "image":"img/brilli.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "comportamiento del conductor",
             "num":4
            },
@@ -355,7 +355,7 @@
          "image":"img/autodistraersexd.png"
         },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "comportamiento del conductor",
             "num":4
         },
@@ -377,7 +377,7 @@
          "image":"img/accidente.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "comportamiento del conductor",
             "num":4
         },
@@ -399,7 +399,7 @@
          "image":"img/enojao.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "comportamiento del conductor",
             "num":4
         },
@@ -421,7 +421,7 @@
          "image":"img/autolluvia.png"
     },
     {
-        "seccion": {
+        "Sección": {
             "nombre": "comportamiento del conductor",
             "num":4
         },
