@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>autovejo</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="bootstrap.min2.css">
+    </head>
+    <body>
+       <audio id="sonidito" autoplay loop>
+        <source src="Under the Sea (Reef Area) - Kirbys Return to Dream Land OST.mp3" type="audio/mpeg">
+       </audio>
+        <div class="left-side">
+            <div id="question-area">
+                <p id="Sección" class="textolindo"></p>
+                <P id ="question" class="preguntalinda"></P>
+                <img src="" id="imagen" class="tamaño">
+                <br>
+                <button id="opc1" onclick="answer(this)" class="btn btn-outline-light"></button>
+                <button id="opc2" onclick="answer(this)"class="btn btn-outline-light" ></button>
+                <button id="opc3" onclick="answer(this)"class="btn btn-outline-light"></button>
+                <div class="mensaje">
+                <p id="resp-correcta"> Respuesta correcta :D</p>
+                <p id="resp-incorrecta">Respuesta incorrecta >:/</p>
+                <button onclick="cargarNivel(this), cambioimg()" id="cambio"class="btn btn-outline-success">Siguiente</button>
+                
+            </div>
+        </div>
+    </div>
+    
+      <div class="right-side">
+        <img src="img/normalito.png" id="sheep">
+        <img src="img/felis.jpg" id="happy">
+        <img src="img/enojao.jpg" id="angry">
+        <div class="mute">
+            <button onclick="pausa()"  class="btn btn-outline-info">🔈 🎵</button>
+            <button onclick="play()"   class="btn btn-outline-info">🔊🎵</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        let level = 0; // Variable global para controlar el nivel
+        
+        function cargarNivel(e) {console.log(e);
+            
+            if (typeof e !=='undefined'){
+                e.style.display='none';
+                console.log(e.style);
+                
+            }
+            mensaje.style.display='none';
+            fetch("./db.json")
+            .then(res => res.json())
+            .then(res => {
+                const p = res[level];
+        console.log(p)
+        level++; // Incrementa el nivel
+          // tiene que redireccionar a fin del juego
+          console.log(level,res.length)
+    if (level > res.length) {
+               window.location.href = "./findeljuego.html"; 
+               console.log("Reiniciando al primer nivel.");
+               return;
+           }
+                if (!p) {
+                    console.error(`Nivel ${level} no encontrado en db.json`);
+                    
+                }
+        
+                const sec = document.getElementById("Sección");
+                sec.innerText = `Sección ${p.Sección.num}: ${p.Sección.nombre}`;
+                
+                const pregunta = document.getElementById("question");
+                pregunta.innerText = p.texto;
+                
+                const img = document.getElementById("imagen");
+                img.src = p.image;
+
+                const opc1 = document.getElementById("opc1");
+                opc1.innerText = p.opciones[0].texto;
+                opc1.dataset.correct = p.opciones[0].correct;
+
+                const opc2 = document.getElementById("opc2");
+                opc2.innerText = p.opciones[1].texto;
+                opc2.dataset.correct = p.opciones[1].correct; 
+
+                const opc3 = document.getElementById("opc3");
+                opc3.innerText = p.opciones[2].texto;
+                opc3.dataset.correct = p.opciones[2].correct; 
+                //para poder cargar mas rapido los niveles usar cargarNivel(document.getElementById("cambio")) en inspeccionar
+                console.log(res);
+               
+            })
+            .catch(error => {
+                console.error("Error al cargar los datos:", error);
+            });
+        }
+        
+        // Llama a cargarNivel la primera vez
+        cargarNivel();
+
+        function pausa(){
+            let audio=document.getElementById("sonidito");
+            audio.pause();
+        }
+        function play(){
+            let audio=document.getElementById("sonidito");
+            audio.play();
+        }
+        </script>
+    </body>
+    </html>    

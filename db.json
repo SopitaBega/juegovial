@@ -1,0 +1,445 @@
+[
+    {
+        "Sección": {
+         "nombre": "SEÑALES DE TRANSITO",
+         "num":1
+        },
+
+        "texto":"¿Que significa esta señal?",
+        "opciones":[
+            {
+                "texto":"No estacionar",
+                "correct":true
+            },
+            {
+                "texto":"No girar a la izquierda",
+                "correct":false
+            },
+            {
+                "texto":"No doblar en U",
+                "correct":false
+            }            
+         ],
+         "image":"img/descarga.png"
+    },
+    {
+        "Sección": {
+            "nombre": "SEÑALES DE TRANSITO",
+            "num":1
+           },
+        "texto":"¿Cual es esta señal?",
+        "opciones":[
+            {
+                "texto":"Prohibido el paso",
+                "correct":false
+            },
+            {
+                "texto":"Construccion cerca",
+                "correct":false
+            },
+            {
+                "texto":"Prohibido girar a la derecha",
+                "correct":true
+            }            
+         ],
+         "image":"img/nogirarder.png"
+    },
+    {
+        "Sección": {
+            "nombre": "SEÑALES DE TRANSITO",
+            "num":1
+           },
+        "texto":"¿Que es esta señal?",
+        "opciones":[
+            {
+                "texto":"No avanzar",
+                "correct":false
+            },
+            {
+                "texto":"Depresion",
+                "correct":true
+            },
+            {
+                "texto":"Contramano",
+                "correct":false
+            }            
+         ],
+         "image":"img/depre.png"
+    },
+    {
+        "Sección": {
+            "nombre": "SEÑALES DE TRANSITO",
+            "num":1
+           },
+        "texto":"¿Como se llama esta señal?",
+        "opciones":[
+            {
+                "texto":"Vaca",
+                "correct":false
+            },
+            {
+                "texto":"Animales sueltos",
+                "correct":true
+            },
+            {
+                "texto":"Animales altos",
+                "correct":false
+            }            
+         ],
+         "image":"img/vaca.png"
+    },
+    {
+        "Sección": {
+            "nombre": "SEÑALES DE TRANSITO",
+            "num":1
+           },
+        "texto":"En caso de ver estas señales de transito a la derecha ¿Que se debera hacer?",
+        "opciones":[
+            {
+                "texto":"Ir a la izquierda",
+                "correct":false
+            },
+            {
+                "texto":"Ir a la derecha",
+                "correct":false
+            },
+            {
+                "texto":"Seguir derecho",
+                "correct":true
+            }           
+         ],
+         "image": "img/noizq.png"
+           
+    },
+    {
+        "Sección": {
+            "nombre": "NORMAS DE CONDUCCION",
+            "num":2
+           },
+        "texto":"¿Cual es el limite de velocidad en autopistas?",
+        "opciones":[
+            {
+                "texto":"120Km/h",
+                "correct":true
+            },
+            {
+                "texto":"160Km/h",
+                "correct":false
+            },
+            {
+                "texto":"80Km/h",
+                "correct":false
+            }            
+         ],
+         "image":"img/sunflower-traffic-signs-speed-limit-260nw-1998554960.webp"
+    },
+    {
+        "Sección": {
+            "nombre": "NORMAS DE CONDUCCION",
+            "num":2
+           },
+        "texto":"¿Que sucede si superas el limite de velocidad permitido en una zona escolar u hospitalaria?",
+        "opciones":[
+            {
+                "texto":"Resiviras una advertencia",
+                "correct":false
+            },
+            {
+                "texto":"Te enviaran a la carcel",
+                "correct":false
+            },
+            {
+                "texto":"Obtendras una multa y se restaran puntos a tu licencia",
+                "correct":true
+            }            
+         ],
+         "image":"img/1señales.png"
+    },
+    {
+        "Sección": {
+            "nombre": "NORMAS DE CONDUCCION",
+            "num":2
+           },
+        "texto":"¿Es obligatorio usar cinturon de seguridad en la parte trasera de un vehiculo?",
+        "opciones":[
+            {
+                "texto":"Si",
+                "correct":true
+            },
+            {
+                "texto":"No",
+                "correct":false
+            },
+            {
+                "texto":"Solo en ocasiones especificas",
+                "correct":false
+            }            
+         ],
+         "image":"img/cinto.png"
+    },
+    {
+        "Sección": {
+            "nombre": "NORMAS DE CONDUCCION",
+            "num":2
+           },
+        "texto":"¿Es obligatorio señalizar un cambio de direccion o carril conlas luces direccionales?",
+        "opciones":[
+            {
+                "texto":"No",
+                "correct":false
+            },
+            {
+                "texto":"Solo en ocasiones especificas",
+                "correct":false
+            },
+            {
+                "texto":"Si",
+                "correct":true
+            }            
+         ],
+         "image":"img/sinson.png"
+    },
+    {
+        "Sección": {
+            "nombre": "NORMAS DE CONDUCCION",
+            "num":2
+           },
+        "texto":"En una intersección sin señales de transito, ¿Quien tiene la prioridad el auto que sigue derecho o el que quiere girar?",
+        "opciones":[
+            {
+                "texto":"El auto que quiere girar",
+                "correct":false
+            },
+            {
+                "texto":"El auto que sigue derecho",
+                "correct":true
+            },
+            {
+                "texto":"Ninguno de los dos",
+                "correct":false
+            }            
+         ],
+         "image":"img/give-way-63_004.jpg"
+    },
+    {
+        "Sección": {
+            "nombre": "NORMAS DE SEGURIDAD",
+            "num":3
+           },
+        "texto":"¿Es obligatorio usar casco de seguridad para los pasajeros de motocicletas?",
+        "opciones":[
+            {
+                "texto":"Si, es obligatorio",
+                "correct":true
+            },
+            {
+                "texto":"No es obligatorio",
+                "correct":false
+            },
+            {
+                "texto":"Algunas veces",
+                "correct":false
+            }            
+         ],
+         "image":"img/motoss.png"
+
+    },
+    {
+        "Sección": {
+            "nombre": "NORMAS DE SEGURIDAD",
+            "num":3
+           },
+        "texto":"¿Esta permitido hablar por telefono mientras conduces?",
+        "opciones":[
+            {
+                "texto":"Si, se puede",
+                "correct":false
+            },
+            {
+                "texto":"No, esta prohibido",
+                "correct":true
+            },
+            {
+                "texto":"Solo con permiso del gobierno",
+                "correct":false
+            }            
+         ],
+         "image":"img/conductorcelu.png"
+    },
+    {
+        "Sección": {
+            "nombre": "NORMAS DE SEGURIDAD",
+            "num":3
+           },
+        "texto":"¿Es obligatorio señalizar un vehiculo averiado o detenido en la carretera con triangulos de seguridad o conos?",
+        "opciones":[
+            {
+                "texto":"No es obligatorio",
+                "correct":false
+            },
+            {
+                "texto":"No es necesario",
+                "correct":false
+            },
+            {
+                "texto":"Si, es obligatorio",
+                "correct":true
+            }            
+         ],
+         "image":"img/automalito.png"
+    },
+    {
+        "Sección": {
+            "nombre": "NORMAS DE SEGURIDAD",
+            "num":3
+           },
+        "texto":"¿Esta permitido adelantar a un vehiculo que esta dando marcha atras?",
+        "opciones":[
+            {
+                "texto":"Si esta permitido",
+                "correct":false
+            },
+            {
+                "texto":"Solo en el carril derecho",
+                "correct":false
+            },
+            {
+                "texto":"No, esta prohibido",
+                "correct":true
+            }            
+         ],
+         "image":"img/autoapurado.png" 
+    },
+    {
+        "Sección": {
+            "nombre": "NORMAS DE SEGURIDAD",
+            "num":3
+           },
+        "texto":"¿Que debe hacer un conductor que se encuentra con un vehiculo que tiene las luces de emergencia encendidas en la autopista?",
+        "opciones":[
+            {
+                "texto":"Aumentar la velocidad",
+                "correct":false
+            },
+            {
+                "texto":"Reducir la velocidad y cambiar de carril",
+                "correct":true
+            },
+            {
+                "texto":"Chocar",
+                "correct":false
+            }            
+         ],
+         "image":"img/brilli.png"
+    },
+    {
+        "Sección": {
+            "nombre": "comportamiento del conductor",
+            "num":4
+           },
+        "texto":"¿Cual es el mayor factor de distraccion para un conductor?",
+        "opciones":[
+            {
+                "texto":"El uso del telefono celular",
+                "correct":true
+            },
+            {
+                "texto":"Escuchar musica",
+                "correct":false
+            },
+            {
+                "texto":"Dormir",
+                "correct":false
+            }            
+         ],
+         "image":"img/autodistraersexd.png"
+        },
+    {
+        "Sección": {
+            "nombre": "comportamiento del conductor",
+            "num":4
+        },
+        "texto":"¿Que es lo mas importante para evitar un accidente?",
+        "opciones":[
+            {
+                "texto":"No usar un auto",
+                "correct":false
+            },
+            {
+                "texto":"Usar el cinturon",
+                "correct":false
+            },
+            {
+                "texto":"Mantener una velocidad segura",
+                "correct":true
+            }            
+         ],
+         "image":"img/accidente.png"
+    },
+    {
+        "Sección": {
+            "nombre": "comportamiento del conductor",
+            "num":4
+        },
+        "texto":"¿Que debe hacer un conductor si otro conductor esta manejando de manera agresiva?",
+        "opciones":[
+            {
+                "texto":"Ignorarlo y mantener la calma",
+                "correct":true
+            },
+            {
+                "texto":"Llamar a la policia",
+                "correct":false
+            },
+            {
+                "texto":"Pegarle",
+                "correct":false
+            }            
+         ],
+         "image":"img/enojao.png"
+    },
+    {
+        "Sección": {
+            "nombre": "comportamiento del conductor",
+            "num":4
+        },
+        "texto":"¿Que es lo mas importante al conducir en condiciones de lluvia?",
+        "opciones":[
+            {
+                "texto":"Frenar de golpe",
+                "correct":false
+            },
+            {
+                "texto":"Se debe reducir la velocidad",
+                "correct":true
+            },
+            {
+                "texto":"Acelerar a lo loco",
+                "correct":false
+            }            
+         ],
+         "image":"img/autolluvia.png"
+    },
+    {
+        "Sección": {
+            "nombre": "comportamiento del conductor",
+            "num":4
+        },
+        "texto":"¿Que debe hacer un conductor si sufre un pinchazo en una rueda mientras conduce a gran velocidad en la autopista?",
+        "opciones":[
+            {
+                "texto":"Reducir gradualmente la velocidad y detenerse",
+                "correct":true
+            },
+            {
+                "texto":"Seguir conduciendo",
+                "correct":false
+            },
+            {
+                "texto":"Derrapar",
+                "correct":false
+            }            
+         ],
+         "image":"img/autotiste.png"
+    }
+]
