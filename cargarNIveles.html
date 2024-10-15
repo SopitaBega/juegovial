@@ -8,7 +8,9 @@
         <link rel="stylesheet" href="bootstrap.min2.css">
     </head>
     <body>
-       
+       <audio id="sonidito" autoplay loop>
+        <source src="Under the Sea (Reef Area) - Kirbys Return to Dream Land OST.mp3" type="audio/mpeg">
+       </audio>
         <div class="left-side">
             <div id="question-area">
                 <p id="Sección" class="textolindo"></p>
@@ -26,10 +28,15 @@
             </div>
         </div>
     </div>
-    <div class="right-side">
+    
+      <div class="right-side">
         <img src="img/normalito.png" id="sheep">
         <img src="img/felis.jpg" id="happy">
         <img src="img/enojao.jpg" id="angry">
+        <div class="mute">
+            <button onclick="pausa()"  class="btn btn-outline-info">🔈 🎵</button>
+            <button onclick="play()"   class="btn btn-outline-info">🔊🎵</button>
+        </div>
     </div>
     <script src="script.js"></script>
     <script>
@@ -92,6 +99,15 @@
         
         // Llama a cargarNivel la primera vez
         cargarNivel();
+
+        function pausa(){
+            let audio=document.getElementById("sonidito");
+            audio.pause();
+        }
+        function play(){
+            let audio=document.getElementById("sonidito");
+            audio.play();
+        }
         </script>
     </body>
     </html>    
